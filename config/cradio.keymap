@@ -70,6 +70,44 @@
         };
     };
 
+    behaviors {
+        longPress: longPress {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LONGPRESS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <360>;
+        };
+
+        HMR: HMR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <250>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 11 12 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>;
+        };
+
+        HML: HML {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <250>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -77,10 +115,10 @@
 
         base {
             bindings = <
-&kp Q        &kp W           &kp E       &kp R        &kp T                   &kp Y      &kp U        &kp I                &kp O              &kp P
-&mt LSHFT A  &lt 5 S         &lt 2 D     &lt 1 F      &kp G                   &kp H      &lt 4 J      &lt 3 K              &lt 7 L            &mt RIGHT_SHIFT SEMI
-&lt 6 Z      &mt LEFT_GUI X  &mt LALT C  &mt LCTRL V  &kp B                   &kp N      &mt RCTRL M  &mt RIGHT_ALT COMMA  &mt RIGHT_GUI DOT  &kp SLASH
-                                         &kp TAB      &mt LSHIFT BACKSPACE    &kp SPACE  &kp ENTER
+&kp Q         &kp W            &kp E        &kp R         &kp T                    &kp Y      &kp U         &kp I                 &kp O               &kp P
+&HML LSHFT A  &lt 5 S          &lt 2 D      &lt 1 F       &kp G                    &kp H      &lt 4 J       &lt 3 K               &lt 7 L             &HMR RIGHT_SHIFT SEMI
+&lt 6 Z       &HML LEFT_GUI X  &HML LALT C  &HML LCTRL V  &kp B                    &kp N      &HMR RCTRL M  &HMR RIGHT_ALT COMMA  &HMR RIGHT_GUI DOT  &kp SLASH
+                                            &kp TAB       &HML LSHIFT BACKSPACE    &kp SPACE  &kp ENTER
             >;
         };
 
