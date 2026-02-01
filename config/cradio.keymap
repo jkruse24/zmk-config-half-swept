@@ -138,9 +138,9 @@
 
         nav {
             bindings = <
-&trans     &trans    &trans    &trans     &trans         &none         &kp PG_UP  &kp UP_ARROW  &kp PG_DN  &none
-&kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &kp LG(TAB)    &kp HOME      &kp LEFT   &kp DOWN      &kp RIGHT  &kp END
-&trans     &trans    &trans    &trans     &trans         &kp LC(BSPC)  &kp BSPC   &none         &none      &none
+&trans     &trans    &trans    &trans     &trans         &none         &kp PG_UP              &kp UP_ARROW               &kp PG_DN        &none
+&kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &kp LG(TAB)    &kp HOME      &HMR RCTRL LEFT_ARROW  &HMR RIGHT_ALT DOWN_ARROW  &HMR LGUI RIGHT  &HMR RIGHT_SHIFT END
+&trans     &trans    &trans    &trans     &trans         &kp LC(BSPC)  &kp BSPC               &none                      &none            &none
                                &trans     &trans         &trans        &trans
             >;
         };
