@@ -79,6 +79,11 @@
             key-positions = <31 32>;
             timeout-ms = <200>;
         };
+
+        quick_del {
+            bindings = <&kp DEL>;
+            key-positions = <13 31>;
+        };
     };
 
     behaviors {
