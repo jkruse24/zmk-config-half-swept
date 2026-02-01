@@ -43,6 +43,20 @@
             #binding-cells = <0>;
             bindings = <&kp LSHIFT &kp RSHIFT &kp LCTRL &kp RCTRL &kp LALT &kp RALT &kp LGUI &kp RGUI>;
         };
+
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp TAB>;
+            label = "ALT_TAB";
+        };
+
+        win_tab: win_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI &kp TAB>;
+            label = "WIN_TAB";
+        };
     };
 
     combos {
@@ -188,15 +202,6 @@
 &none        &none  &none       &none  &none    &bt BT_SEL 0  &bt BT_SEL 4  &none         &none         &none
 &none        &none  &bt BT_CLR  &none  &none    &none         &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
                                 &none  &none    &none         &none
-            >;
-        };
-
-        layer_8 {
-            bindings = <
-&kp ESC    &kp PAGE_DOWN  &kp UP_ARROW    &kp PAGE_UP      &none        &none         &none              &none  &none          &none
-&kp HOME   &kp LEFT       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END      &kp DELETE    &kp RIGHT_CONTROL  &none  &kp RIGHT_WIN  &kp RIGHT_SHIFT
-&kp LC(Z)  &kp LC(R)      &kp LC(Z)       &kp LG(TAB)      &none        &kp LC(BSPC)  &kp BSPC           &none  &none          &none
-                                          &kp RS(V)        &kp LS(C)    &kp ENTER     &kp LS(R)
             >;
         };
     };
