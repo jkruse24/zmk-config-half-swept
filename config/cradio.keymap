@@ -69,7 +69,7 @@
         };
 
         homeLayer {
-            bindings = <&to 6>;
+            bindings = <&to 0>;
             key-positions = <16 13>;
             timeout-ms = <200>;
         };
