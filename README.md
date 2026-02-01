@@ -1,1 +1,1 @@
-![Keymap file](./keymap.svg)
+![Keymap file](./assets/keymap.svg)
