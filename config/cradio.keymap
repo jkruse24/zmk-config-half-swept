@@ -159,7 +159,7 @@
 &kp GRAVE  &kp PLUS       &kp UNDER    &kp LBRC              &kp RIGHT_BRACE          &none      &none          &none        &none     &none
 &kp EXCL   &kp POUND      &kp PERCENT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp MINUS  &kp BACKSLASH  &kp AT_SIGN  &kp HASH  &kp DOLLAR
 &kp PIPE   &kp AMPERSAND  &kp CARET    &kp LEFT_BRACKET      &kp RIGHT_BRACKET        &none      &none          &none        &none     &none
-                                       &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES        &none      &none
+                                       &kp DOUBLE_QUOTES     &kp SINGLE_QUOTE         &none      &none
             >;
         };
 
